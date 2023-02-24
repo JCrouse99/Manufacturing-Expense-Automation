@@ -35,5 +35,5 @@ expense_col = [round(i, 0) for i in eco.Expense_Calc(accnt_list, account_ref, am
 '''Out put the expense column into an excel spreadsheet'''
 expense_frame = {'Accounts':accnt_list, 'Balance': expense_col}
 ef = pd.DataFrame(expense_frame)
-output_directory = r"C:\Users\jcjct\Downloads\Documents\MEA_New\NewTracker.xlsx"
+output_directory = r"C:\Users\jcjct\Downloads\Documents\Manufacturing-Expense-Automation\NewTracker.xlsx"
 ef.to_excel(output_directory)
